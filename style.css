@@ -20,30 +20,26 @@
 	font-family: Calibri, sans-serif;
 }
 
-/*Menu déroulant*/
+/*Début menu déroulant*/
 nav ul {
 	list-style-type: none;
 }
-
 nav li{
 	float: left;
 	width: 25%;
 	text-align: center;
 }
-
 nav ul::after{
 	content: "";
 	display: table;
 	clear: both;
 }
-
 nav {
 	width: 100%;
 	margin: auto;
 	position: sticky;
 	top: 0px;
 }
-
 nav a {
 	display: block;
 	text-decoration: none;
@@ -51,11 +47,11 @@ nav a {
 	border-bottom: 2px solid transparent;
 	padding: 10px 0px;
 }
-
 nav a:hover {
 	color: red;
 	border-bottom: 2px solid red;
 }
+/*Fin menu déroulant*/
 
 h2 {
 	text-align: center;
@@ -66,3 +62,36 @@ h2 {
 p {
 	text-align: center;
 }
+
+/*Début sous menu*/
+.sous {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+.sous li{
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+nav > ul li:hover .sous{
+	display: block;
+}
+.sous a:hover{
+	border-bottom: none;
+	background-color: rgba(200, 200, 200, 0.1);
+}
+nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+.deroulant > a::after{
+	content: " ▼";
+	font-size: 12px;
+}
+/*Fin sous menu*/
