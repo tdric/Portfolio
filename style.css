@@ -5,10 +5,12 @@
 
 #alinea {
 	text-indent: 1em;
+	text-align: center;
 }
 
 .test {
 	margin : 15px;
+	text-align: center;
 }
 
 /*Affichage d'une même police
