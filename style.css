@@ -58,11 +58,11 @@ nav a:hover {
 h2 {
 	text-align: center;
 	padding-top: 35px;
-	padding-bottom: 20px;
 }
 
 p {
 	text-align: center;
+	padding-top: 35px;
 }
 
 /*Début sous menu*/
@@ -94,13 +94,14 @@ nav ul li{
 	position: relative;
 }
 .deroulant > a::after{
-	content: " ▼";
+	content: "▼";
 	font-size: 12px;
 }
 /*Fin sous menu*/
 
 /*Début catégorie*/
-.categorie li{
+.categorie li {
+	font-style: italic;
 	float: none;
 	width: 100%;
 	text-align: left;
